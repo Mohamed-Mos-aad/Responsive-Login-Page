@@ -1,0 +1,449 @@
+/* Start Global Rules */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --main-font: 'Poppins', sans-serif;
+    --second-font: 'Avenir', sans-serif;
+    --main-color: #6B551A;
+}
+/* End Global Rules */
+/* Start Container */
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* Start Media Query */
+/* Extra Small */
+@media (max-width:767px)
+{
+    .container
+    {
+        height: 200vh;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* Small */
+@media (min-width:768px) and (max-width:991px)
+{
+
+}
+/* Medium */
+@media (min-width:992px) and (max-width:1199px)
+{
+
+}
+/* Large */
+@media (min-width:1200px)
+{
+
+}
+/* End Media Query */
+/* End Container */
+/* Start Left Side */
+.container .left
+{
+    height: 100vh;
+    background-image: url(../images/login\ photo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 72px;
+}
+.container .left h1
+{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+.container .left p
+{
+    width: 70%;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+/* Start Media Query */
+/* Extra Small */
+@media (max-width:767px)
+{
+    .container .left
+    {
+        padding: 0 20px;
+    }
+    .container .left h1
+    {
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .container .left p
+    {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+/* Small */
+@media (min-width:768px) and (max-width:991px)
+{
+    .container .left
+    {
+        padding: 0 30px;
+    }
+    .container .left h1
+    {
+        font-weight: 600;
+        font-size: 45px;
+        margin-top: 90px;
+    }
+    .container .left p
+    {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+/* End Media Query */
+/* End Left Side */
+/* Start Right Side */
+.container .right
+{
+    height: 100vh;
+    padding: 0 76px;
+}
+.container .right form
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+}
+.container .right form h2
+{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-align: right;
+    margin-top: 50px;
+}
+.container .right form h2 a
+{
+    color: #111111;
+}
+.container .right form .title h3
+{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333333;
+}
+.container .right form button
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: solid 1px rgba(102, 102, 102, 0.50);
+    border-radius: 40px;
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30.05px;
+    color: #333333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .right form button:hover
+{
+    background-color: rgba(0, 0, 0, 0.025);
+}
+.container .right form button:first-of-type
+{
+    margin-bottom: 16px;
+}
+.container .right form button img
+{
+    width: 22px;
+    margin-right: 17px;
+}
+.container .right form button i
+{
+    color: #47ACDF;
+    margin-right: 17px;
+}
+.container .right form .or-line
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #666666;
+    text-align: center;
+}
+.container .right form .or-line::before
+{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    left: 0;
+}
+.container .right form .or-line::after
+{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    right: 0;
+}
+.container .right form label
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+.container .right form label span
+{
+    cursor: pointer;
+}
+.container .right form label:last-of-type
+{
+    margin-top: 5px;
+}
+.container .right form input
+{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: solid 1px rgba(102, 102, 102, 0.25);
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.container .right form h4
+{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+    text-align: end;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 18px;
+}
+.container .right form .bottom button
+{
+    width: 50%;
+    height: 64px;
+    background-color: var(--main-color);
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.container .right form .bottom button:hover
+{
+    background-color: #70581b;
+}
+.container .right form h5
+{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.container .right form h5 a
+{
+    color: #111111;
+}
+/* Start Media Query */
+/* Extra Small */
+@media (max-width:767px)
+{
+    .container .right
+    {
+        padding: 0 20px;
+    }
+    .container .right form
+    {
+        gap: 20px;
+    }
+    .container .right form h2
+    {
+        font-size: 12px;
+    }
+    .container .right form .title h3
+    {
+        font-size: 24px;
+    }
+    .container .right form button
+    {
+        height: 50px;
+        font-size: 16px;
+    }
+    .container .right form button img
+    {
+        width: 16px;
+    }
+    .container .right form .or-line
+    {
+        font-size: 13px;
+    }
+    .container .right form .or-line::before
+    {
+        width: 40%;
+    }
+    .container .right form .or-line::after
+    {
+        width: 40%;
+    }
+    .container .right form label
+    {
+        font-size: 14px;
+    }
+    .container .right form input
+    {
+        height: 40px;
+    }
+    .container .right form h4
+    {
+        font-size: 12px;
+    }
+    .container .right form .bottom button
+    {
+        height: 40px;
+        font-size: 16px;
+    }
+    .container .right form h5
+    {
+        font-size: 12px;
+    }
+}
+/* Small */
+@media (min-width:768px) and (max-width:991px)
+{
+    .container .right
+    {
+        padding: 0 20px;
+    }
+    .container .right form
+    {
+        gap: 20px;
+    }
+    .container .right form .title h3
+    {
+        font-size: 26px;
+    }
+    .container .right form button
+    {
+        height: 50px;
+        font-size: 18px;
+    }
+    .container .right form button img
+    {
+        width: 18px;
+    }
+    .container .right form .or-line
+    {
+        font-size: 14px;
+    }
+    .container .right form .or-line::before
+    {
+        width: 40%;
+    }
+    .container .right form .or-line::after
+    {
+        width: 40%;
+    }
+    .container .right form label
+    {
+        font-size: 14px;
+    }
+    .container .right form input
+    {
+        height: 40px;
+    }
+    .container .right form h4
+    {
+        font-size: 14px;
+    }
+    .container .right form .bottom button
+    {
+        height: 40px;
+        font-size: 18px;
+    }
+    .container .right form h5
+    {
+        font-size: 14px;
+    }
+}
+/* Medium */
+@media (min-width:992px) and (max-width:1199px)
+{
+    .container .right
+    {
+        padding: 0 20px;
+    }
+    .container .right form button
+    {
+        height: 50px;
+        font-size: 20px;
+    }
+    .container .right form button img
+    {
+        width: 20px;
+    }
+    .container .right form .or-line
+    {
+        font-size: 16px;
+    }
+    .container .right form .or-line::before
+    {
+        width: 42%;
+    }
+    .container .right form .or-line::after
+    {
+        width: 42%;
+    }
+    .container .right form input
+    {
+        height: 40px;
+    }
+    .container .right form .bottom button
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+}
+/* End Media Query */
+/* End Right Side */
