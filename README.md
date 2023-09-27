@@ -17,8 +17,6 @@ https://www.figma.com/file/B9rTBq4yUxdTie9CS0hi6e/Intern2Grow---UI-Developer---L
 
 ## Technologies Used
 
-List the technologies, programming languages, and tools that were used in the development of your project. Here's an example:
-
 - **Programming Languages:** HTML, CSS.
 - **Other Tools:** VS Code.
 
